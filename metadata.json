@@ -1,0 +1,5 @@
+{
+  "name": "TripGenie",
+  "description": "An AI-powered trip planner that visualizes your itinerary with interactive maps and paths.",
+  "requestFramePermissions": []
+}

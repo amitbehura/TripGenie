@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TripGenie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <style>
+       /* Custom scrollbar for better aesthetics */
+       ::-webkit-scrollbar {
+         width: 8px;
+       }
+       ::-webkit-scrollbar-track {
+         background: #f1f1f1;
+       }
+       ::-webkit-scrollbar-thumb {
+         background: #cbd5e1;
+         border-radius: 4px;
+       }
+       ::-webkit-scrollbar-thumb:hover {
+         background: #94a3b8;
+       }
+       .leaflet-container {
+         width: 100%;
+         height: 100%;
+         z-index: 0;
+       }
+       @keyframes shake {
+         0%, 100% { transform: translateX(0); }
+         25% { transform: translateX(-5px); }
+         75% { transform: translateX(5px); }
+       }
+       .animate-shake {
+         animation: shake 0.2s ease-in-out 0s 2;
+       }
+     </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
+    "leaflet": "https://esm.sh/leaflet@^1.9.4",
+    "react-leaflet": "https://esm.sh/react-leaflet@^5.0.0",
+    "jspdf": "https://esm.sh/jspdf@^2.5.1",
+    "html2canvas": "https://esm.sh/html2canvas@^1.4.1"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
